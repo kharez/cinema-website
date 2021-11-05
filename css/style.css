@@ -1,0 +1,238 @@
+html, body, div, span, applet, object, iframe, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* base */
+html {
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  line-height: 20px;
+}
+
+.container-header {
+  padding: 20px;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.title {
+  margin: 30px 0;
+  display: inline-block;
+  padding: 20px 0;
+  width: 250px;
+
+  text-align: center;
+  color: #FFF;
+  background-color: #c45a5a;
+}
+.nom{
+padding-top: 60px;
+text-align: center;
+font-size:40px;
+}
+
+.contain-center {
+  margin-top: 30px;
+  text-align: center;
+  
+}
+
+/* header */
+.header {
+  height: 500px;
+  
+  color: #FFF;
+  text-align: center;
+  background: center / cover no-repeat url(../images/header.jpg);
+}
+
+.header img {
+  width: 100px;
+}
+
+.description {
+  margin-top: 150px;
+  text-align: left;
+}
+
+/* display film */
+.display-films { 
+  margin-top: 50px;
+    text-align: center; 
+}
+
+.display-films img {
+  width: 100%;
+}
+
+/* 3d section */
+.section-3d {
+  margin: 40px 0;
+  padding: 30px 0;
+  background: center / cover no-repeat url(../images/3d.jpg);
+}
+
+.section-3d p {
+  margin-top: 50px;
+  padding: 10px;
+
+  background-color: #C4C4C4;
+}
+
+/* section foods */
+.display-foods {
+  background-color: #F1E5E5;
+}
+
+.introducing_food img {
+  width: 100%;
+}
+
+.three-foods {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.three-foods h3 {
+  margin: 20px 0;
+}
+
+.three-foods img {
+  width: 100%;
+}
+
+.footer {
+  height: 500px;
+  margin-top: 100px;
+
+  background: center / cover no-repeat url(../images/footer.png);
+}
+
+@media screen and (min-width: 740px) {
+
+  .header {
+    height: 700px;
+    text-align: left;
+
+    color: #000;
+  }
+
+  .header img {
+    width: 150px;
+  }
+
+  .description {
+    margin-top: 0px;
+    
+    max-width: 540px;
+    margin: 0 auto;
+  }
+  
+  .nav {
+    display: block;
+
+    position: absolute;
+    top: 20px;
+    left: 0;
+    right: 0; 
+
+    text-align: center;
+  }
+
+  .nav a {
+    padding: 0 15px;
+
+    text-transform: uppercase;
+  }
+
+  /* display-films */
+  .display-films { 
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+  }
+
+  .display-films img {
+    height: 400px;
+  }
+
+  /* title */
+  .contain-center {
+    text-align: left;
+  }
+
+
+  /* section 3d */
+  .section-3d {
+    height: 700px;
+  }
+
+  .section-3d p {
+    width: 400px;
+    margin-top: 300px;
+    float: right;
+  }
+
+  /* section foods */
+  .introducing_food {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 80px;
+  }
+
+  .three-foods {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+  }
+}
